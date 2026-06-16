@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vico-clr"
+version = "0.0.1"
+description = "LWIR spill detector"
+readme = "PYPIREADME.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Félix Olémou", email = "olemoufelix1@gmail.com" },
+
+]
+
+keywords = [
+    "computer-vision",
+    "video Modeling",
+    "uncertainty-estimation"
+]
+
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+    dependencies = [
+    "torch>=2",
+    "torchvision",
+    "tensorboard",
+    "wandb",
+    "iopath",
+    "pyyaml",
+    "kornia",
+    "numpy",
+    "opencv-python",
+    "submitit",
+    "braceexpand",
+    "webdataset",
+    "timm",
+    "transformers",
+    "peft",
+    "decord",
+    "pandas",
+    "einops",
+    "beartype",
+    "psutil",
+    "h5py",
+    "fire",
+    "python-box",
+    "scikit-image",
+    "ftfy",
+    "jupyter"
+    ]
+
+
+[tool.setuptools.packages.find]
+where = ["src","src_utils","configs"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"configs" = ["*.yaml"]
