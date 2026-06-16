@@ -39,4 +39,12 @@ Long-Wave Infrared Imaging and a Weakly Supervised Contrastive) addresses one of
 - ✅ Produces **highly discriminative embeddings** for downstream tasks
 - ✅ Handles **class imbalance**
 - ✅ Easy integration into existing PyTorch pipelines
-
+  
+### Environment Setup
+```bash
+1. Create virtual environment
+python -m venv venv
+2. Activate the virtual environment
+On Linux/macOS
+source venv/bin/activate
+```
